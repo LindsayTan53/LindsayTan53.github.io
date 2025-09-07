@@ -1,58 +1,98 @@
 ---
+layout: about
+title: About
 permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+# Lindsay Tan
 
-<span class='anchor' id='about-me'></span>
+I'm a data science undergraduate with strong interests in machine learning, causal inference, and data visualization. My academic background combines statistical modeling, computational thinking, and applied analytics, with hands-on experience in both structured coursework and independent projects.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+At the University of Washington, I have completed courses in statistical learning, portfolio theory, computational finance, and qualitative research. These have equipped me with solid foundations in both theory and application—ranging from bootstrapped estimations in R to Tableau-based dashboard design and causal modeling in Python.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+My current research interests include:
+- Causal machine learning (e.g., matching methods, ATE/ATT estimation, and DoWhy)
+- Data storytelling with Tableau and interactive dashboards
+- Real-world applications of interpretable ML in environmental and economic contexts
 
+In the past, I’ve worked on projects involving:
+- Predicting survival probabilities using logistic regression and random forests (Kaggle Titanic)
+- Building efficient frontier portfolios and computing VaR in R
+- Conducting qualitative coding using ATLAS.ti for environmental policy transcripts
 
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+I’m actively seeking opportunities where I can apply my data science skills to solve meaningful problems in research, technology, or policy. I'm especially interested in internships and collaborative research that bridge machine learning and domain expertise.
 
-# 📝 Publications 
+Feel free to reach out!
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+---
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+## 🧠 Machine Learning Projects
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+### 🐍 Titanic Survival Prediction (Kaggle)
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
+- Built a logistic regression and random forest classifier to predict survival using Scikit-learn
+- Achieved 81% accuracy on the public leaderboard
+- Used feature engineering (age binning, title extraction) to improve model performance  
+- [GitHub Repo](https://github.com/lindsaytan/titanic-ml)
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+---
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+### 🧪 Causal Inference in Marketing Campaigns
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- Used DoWhy to simulate and estimate ATT/ATE on customer purchasing behavior
+- Applied propensity score matching to eliminate confounding bias
+- [Notebook Demo](https://github.com/lindsaytan/causal-marketing)
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+---
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+### 📊 Tableau Dashboard: Airbnb Data Analysis
+
+- Created interactive dashboards to visualize price trends and reviews across cities
+- Used calculated fields, filters, and storytelling mode to highlight insights
+- [PDF Screenshot](https://example.com/airbnb-dashboard.pdf)
+
+## 🧠 Machine Learning Projects
+
+### 🏠 Predicting Housing Prices with Linear Regression
+
+- Built a linear regression model to predict house prices based on features such as square footage, number of bedrooms, and location indicators.
+- Applied one-hot encoding and log-transformation to reduce skewness and improve prediction accuracy.
+- Performed train-test split, error evaluation with RMSE, and feature significance analysis.
+- Tools used: `pandas`, `scikit-learn`, `matplotlib`
+<!-- [View notebook](https://github.com/yourname/housing-price-prediction) -->
+
+---
+
+### 💬 Sentiment Analysis on Movie Reviews
+
+- Cleaned and preprocessed IMDB movie reviews dataset using TF-IDF and stopword removal.
+- Trained and compared logistic regression and Naive Bayes classifiers to predict review sentiment (positive/negative).
+- Evaluated model performance with accuracy, precision, and confusion matrices.
+- Tools used: `nltk`, `sklearn`, `pandas`, `seaborn`
+<!-- [View notebook](https://github.com/yourname/sentiment-analysis) -->
+
+---
+
+### 💳 Loan Default Prediction with Decision Trees
+
+- Built a decision tree classifier to predict loan safety levels based on applicant features such as credit history, loan amount, and income ratio.
+- Visualized decision boundaries and tree structures for model interpretability.
+- Performed pruning to mitigate overfitting and tuned `max_depth`, `min_samples_split`, etc.
+- Tools used: `sklearn.tree`, `pandas`, `graphviz`
+<!-- [View notebook](https://github.com/yourname/loan-safety-decision-tree) -->
+
+---
+
+### 🧵 K-Means Clustering on Textual Data
+
+- Applied unsupervised clustering to group similar documents based on their TF-IDF representations.
+- Explored vectorization, elbow method for optimal `k`, and used PCA for visualization in 2D.
+- Interpreted clusters by analyzing top keywords and matching representative documents.
+- Tools used: `scikit-learn`, `TfidfVectorizer`, `PCA`, `matplotlib`
+<!-- [View notebook](https://github.com/yourname/kmeans-text) -->
+
+---
+
+## 💡 Upcoming
+
+More projects and writing coming soon...
